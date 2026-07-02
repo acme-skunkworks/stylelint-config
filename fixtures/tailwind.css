@@ -1,0 +1,19 @@
+/*
+ * Self-test fixture. Exercises the Tailwind directives that must lint clean
+ * under the preset (no false positives from at-rule-no-unknown /
+ * function-no-unknown), with declarations in alphabetical order to satisfy
+ * order/properties-alphabetical-order.
+ */
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1e40af;
+}
+
+.btn {
+  @apply rounded;
+
+  background-color: var(--color-brand);
+  color: #fff;
+}
