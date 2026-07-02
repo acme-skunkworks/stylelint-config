@@ -27,6 +27,16 @@ export default defineConfig([
       "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     },
   },
+  // The published entry point is `src/index.ts` default-exporting the Stylelint
+  // config object. canonical/filename-match-exported would force the `src/`
+  // directory to be renamed after that export — not a convention we want for the
+  // package's build-input directory — so disable it just for the entry file.
+  {
+    files: ["src/index.ts"],
+    rules: {
+      "canonical/filename-match-exported": "off",
+    },
+  },
   // The base preset enables type-aware linting (parserOptions.project: true),
   // which resolves each file to the nearest tsconfig.json. The published build
   // config (tsconfig.json) is deliberately src-only, so infra/ files aren't in

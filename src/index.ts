@@ -1,8 +1,25 @@
+import type { Config } from "stylelint";
+
 /**
- * Placeholder entry point for the package template.
+ * `@acme-skunkworks/stylelint-config` — the shared, Tailwind-friendly Stylelint
+ * preset for Acme Skunkworks projects.
  *
- * Everything under `src/` belongs to the generated package — replace this file
- * with the package's real public API. The surrounding shell (build, lint,
- * release workflows) does not need to change when you do.
+ * Consumed via:
+ *
+ * ```jsonc
+ * { "extends": "@acme-skunkworks/stylelint-config" }
+ * ```
+ *
+ * `stylelint-config-tailwindcss` is listed after `stylelint-config-standard`
+ * so the Tailwind layer wins the `at-rule-no-unknown` / `function-no-unknown`
+ * overrides that let `@tailwind`, `@theme`, `@apply` etc. lint cleanly.
  */
-export const PACKAGE_NAME = "@acme-skunkworks/npm-package-template";
+const config: Config = {
+  extends: ["stylelint-config-standard", "stylelint-config-tailwindcss"],
+  plugins: ["stylelint-order"],
+  rules: {
+    "order/properties-alphabetical-order": true,
+  },
+};
+
+export default config;
