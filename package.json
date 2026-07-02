@@ -50,7 +50,7 @@
     "clean": "rimraf node_modules dist",
     "format": "prettier --write .",
     "lint": "eslint 'src/**/*.ts' 'infrastructure/scripts/**/*.ts' --cache --cache-location ./.eslintcache",
-    "lint:css": "stylelint '**/*.css'",
+    "lint:css": "stylelint \"**/*.css\"",
     "lint:fix": "eslint 'src/**/*.ts' 'infrastructure/scripts/**/*.ts' --fix --cache --cache-location ./.eslintcache",
     "lint:md": "markdownlint-cli2 '**/*.{md,mdx}' '!**/node_modules/**' '!**/dist/**' '!**/.turbo/**' '!**/.astro/**'",
     "lint:md:fix": "markdownlint-cli2 --fix '**/*.{md,mdx}' '!**/node_modules/**' '!**/dist/**' '!**/.turbo/**' '!**/.astro/**'",

@@ -35,7 +35,7 @@ Add a script to `package.json` and run it:
 ```json
 {
   "scripts": {
-    "lint:css": "stylelint '**/*.css'"
+    "lint:css": "stylelint \"**/*.css\""
   }
 }
 ```
