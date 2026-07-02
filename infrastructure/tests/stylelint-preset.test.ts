@@ -1,6 +1,5 @@
 import config from "../../src";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import stylelint from "stylelint";
 import { describe, expect, it } from "vitest";
 
