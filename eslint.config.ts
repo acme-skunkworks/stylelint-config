@@ -15,18 +15,6 @@ import { defineConfig } from "eslint/config";
 export default defineConfig([
   ...base,
   typescript,
-  // infrastructure/ holds the workflow/release shell's CLI tooling (not
-  // published code): it legitimately imports devDependencies (e.g.
-  // gray-matter), and the changelog validator is an inherently branchy flat
-  // list of schema checks, so the default complexity ceiling doesn't apply.
-  // Scoped narrowly to this directory.
-  {
-    files: ["infrastructure/**/*.ts"],
-    rules: {
-      complexity: "off",
-      "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
-    },
-  },
   // The published entry point is `src/index.ts` default-exporting the Stylelint
   // config object. canonical/filename-match-exported would force the `src/`
   // directory to be renamed after that export — not a convention we want for the

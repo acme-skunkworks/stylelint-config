@@ -92,7 +92,9 @@ configure Trusted Publisher → CI takes over from publish #2.
 ## Release-orchestrator onboarding (hands-off releases)
 
 Releases are driven by the **private** `acme-skunkworks/release-orchestrator` repo, which holds
-the bot key, runs `release-please release-pr` + `finalise-changelog.ts`, and merges the release PR.
+the bot key, runs `release-please release-pr`, and merges the release PR. Post-merge changelog
+enrichment / `version` stamping runs in-repo via `reusable-changelog-enrich.yml` in
+`pkg-release.yml` (A-799); the orchestrator's inline finalise is retired later (A-801).
 
 - [ ] Install road-runner-bot (perms in [Org-level](#org-level-acme-skunkworks)).
 - [ ] Add the repo to the orchestrator's `matrix.repo`.

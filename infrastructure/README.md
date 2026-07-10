@@ -10,12 +10,6 @@ infrastructure/
     ensure-yamllint.sh              # CI-unused since A-447 (lint reusable caller installs yamllint); local + reference
     ensure-actionlint.sh            # CI-unused since A-447 (lint reusable caller installs actionlint); local + reference
     ensure-bats.sh                  # CI-unused since A-447 (build-test caller runs `pnpm exec bats`); local + reference
-    validate-changelog.ts           # `lint` caller's changelog lane (`validate:changelog`): enforces the entry schema
-    check-changelog-completeness.ts # ci.yml `changelog-completeness` job: a release-triggering PR title needs a changelog/ entry
-    finalise-changelog.ts           # orchestrator step after `release-please release-pr` (= `pnpm changelog:finalise`); the only changelog CLI
-    enrich-changelog.ts             # pure lib used by finalise: fills entry fields once + overwrites stats, idempotently
-    add-links-changelog.ts          # pure lib used by finalise: rewrites bare Linear IDs to links (masking code/links)
-    stamp-changelog-version.ts      # pure lib used by finalise: stamps the just-bumped version once, leaving absent fields
     publish-via-raw-npm.sh          # CI-unused since A-639 (reusable-pkg-release.yml inlines the npm publish); local + reference
     publish-to-github-packages.sh   # CI-unused since A-639 (reusable-pkg-release.yml inlines the GH Packages publish); local + reference
   tests/
@@ -23,6 +17,10 @@ infrastructure/
     *.bats                          # bats-core, run via `pnpm test:sh`
     fixtures/                       # static inputs shared by tests
 ```
+
+Changelog validate / enrich / finalise live in `@acme-skunkworks/changelog-core`
+(`pnpm exec changelog-core …`); post-merge write-back is
+`reusable-changelog-enrich.yml` (A-799 / A-821).
 
 ## Per-script language rule
 
