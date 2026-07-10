@@ -28,3 +28,5 @@ stats:
   [A-799](https://linear.app/acme-skunkworks/issue/A-799)).
 - Updated docs for the in-repo enrich lifecycle; dropped `merge_strategy` from
   the documented schema ([A-802](https://linear.app/acme-skunkworks/issue/A-802)).
+- Committed a root `config.json` so `changelog-core` can resolve identity keys in
+  CI (skill-local `config.json` remains gitignored).
