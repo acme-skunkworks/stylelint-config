@@ -24,10 +24,10 @@ stats:
   the vendored `infrastructure/scripts/*changelog*.ts` scripts and tests (plus
   `gray-matter`).
 - Wired `reusable-changelog-enrich.yml` (`mode: finalise`, `secrets: inherit`)
-  into `pkg-release.yml`, pinned at the [A-821](https://linear.app/acme-skunkworks/issue/A-821) merge SHA, so post-merge
+  into `pkg-release.yml`, pinned at the [A-821](https://linear.app/rheged-studio/issue/A-821) merge SHA, so post-merge
   enrichment and `version` stamping run in-repo as `road-runner-bot` (ADR 0004 /
-  [A-799](https://linear.app/acme-skunkworks/issue/A-799)).
+  [A-799](https://linear.app/rheged-studio/issue/A-799)).
 - Updated docs for the in-repo enrich lifecycle; dropped `merge_strategy` from
-  the documented schema ([A-802](https://linear.app/acme-skunkworks/issue/A-802)).
+  the documented schema ([A-802](https://linear.app/rheged-studio/issue/A-802)).
 - Committed a root `config.json` so `changelog-core` can resolve identity keys in
   CI (skill-local `config.json` remains gitignored).

@@ -26,11 +26,11 @@ stats:
   `stylelint-config-tailwindcss` (the Tailwind layer wins the `at-rule-no-unknown`
   / `function-no-unknown` overrides so `@import "tailwindcss"`, `@theme`, `@apply`
   lint cleanly), plus `stylelint-order` with `order/properties-alphabetical-order`
-  ([A-270](https://linear.app/acme-skunkworks/issue/A-270)).
+  ([A-270](https://linear.app/rheged-studio/issue/A-270)).
 - Consumed via `extends: "@acme-skunkworks/stylelint-config"`. The extended
   configs and the order plugin are bundled as `dependencies`; only `stylelint`
   (`^17`) is a peer, so consumers install one package plus Stylelint
-  ([A-271](https://linear.app/acme-skunkworks/issue/A-271)).
+  ([A-271](https://linear.app/rheged-studio/issue/A-271)).
 - A self-test: the repo dogfoods the built preset via `stylelint.config.mjs`, and
   a Vitest test lints a Tailwind fixture to guard against false positives.
 
@@ -40,4 +40,4 @@ stats:
   `@acme-skunkworks/stylelint-config`, seeded at `1.0.0`, and pointed the
   metadata (description/keywords/repository) at the new package. Completes the
   per-package standup checklist from
-  [A-269](https://linear.app/acme-skunkworks/issue/A-269).
+  [A-269](https://linear.app/rheged-studio/issue/A-269).
