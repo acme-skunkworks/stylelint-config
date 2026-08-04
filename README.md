@@ -1,6 +1,6 @@
 # @acme-skunkworks/stylelint-config
 
-Shared, Tailwind-friendly [Stylelint](https://stylelint.io) config for Acme Skunkworks projects — [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard) + [`stylelint-config-tailwindcss`](https://github.com/schoero/stylelint-config-tailwindcss), with alphabetical property ordering via [`stylelint-order`](https://github.com/hudochenkov/stylelint-order).
+Shared, Tailwind-friendly [Stylelint](https://stylelint.io) config for Rheged Studio projects — [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard) + [`stylelint-config-tailwindcss`](https://github.com/schoero/stylelint-config-tailwindcss), with alphabetical property ordering via [`stylelint-order`](https://github.com/hudochenkov/stylelint-order).
 
 ## 📦 Installation
 
