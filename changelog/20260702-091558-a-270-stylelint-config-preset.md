@@ -1,21 +1,26 @@
 ---
-title: "Add the Tailwind-friendly stylelint-config preset"
-release_note: "Initial release of @acme-skunkworks/stylelint-config — a shared Stylelint preset composing stylelint-config-standard, stylelint-config-tailwindcss, and alphabetical property ordering."
-created_at: "2026-07-02T09:15:58Z"
-merged_at:
-branch: "a-270-stylelint-config-preset"
-pr:
-commit:
+title: Add the Tailwind-friendly stylelint-config preset
+release_note: Initial release of @acme-skunkworks/stylelint-config — a shared Stylelint preset composing stylelint-config-standard, stylelint-config-tailwindcss, and alphabetical property ordering.
+created_at: '2026-07-02T09:15:58Z'
+merged_at: '2026-07-02T10:24:54Z'
+branch: a-270-stylelint-config-preset
+pr: 2
+commit: f78baf0
 merge_strategy:
-author: "rob@acmeskunkworks.io"
+author: rob@acmeskunkworks.io
 co_authors: []
 category: feature
 breaking: false
-issues: ["A-269", "A-270", "A-271"]
+issues:
+  - A-269
+  - A-270
+  - A-271
 stats:
-  files_changed:
-  loc_added:
-  loc_removed:
+  files_changed: 11
+  loc_added: 827
+  loc_removed: 26
+  commits: 6
+version: 1.0.1
 ---
 
 ## Added

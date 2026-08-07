@@ -1,7 +1,7 @@
 ---
 title: Add commitlint pre-push range check
 release_note:
-version:
+version: 1.0.1
 created_at: '2026-07-23T14:48:00Z'
 merged_at: '2026-07-23T15:05:39Z'
 branch: a-1023-tier-2-fan-out-commitlint-pre-push
@@ -17,6 +17,7 @@ stats:
   files_changed: 6
   loc_added: 396
   loc_removed: 1
+  commits: 1
 ---
 
 ## Added

@@ -16,7 +16,8 @@ stats:
   files_changed: 10
   loc_added: 42
   loc_removed: 16
-  commits:
+  commits: 3
+version: 1.0.1
 ---
 
 ## Changed
