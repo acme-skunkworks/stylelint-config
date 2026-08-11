@@ -2,10 +2,10 @@
 title: Bump other @acme-skunkworks packages and fix markdownlint 3.x fallout
 release_note: ""
 created_at: "2026-08-07T15:12:56Z"
-merged_at:
+merged_at: "2026-08-11T13:03:58Z"
 branch: a-1345-stylelint-config-bump-acme-skunkworks-and-fix-lint-fallout
-pr:
-commit:
+pr: 31
+commit: dcc344d
 author: rob@acmeskunkworks.io
 co_authors: []
 category: chore
@@ -13,9 +13,9 @@ breaking: false
 issues:
   - A-1345
 stats:
-  files_changed:
-  loc_added:
-  loc_removed:
+  files_changed: 7
+  loc_added: 77
+  loc_removed: 45
   commits:
 ---
 
