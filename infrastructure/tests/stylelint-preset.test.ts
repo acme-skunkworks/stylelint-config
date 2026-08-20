@@ -9,7 +9,7 @@ import { describe, expect, it } from "vitest";
 const repoRoot = path.resolve(import.meta.dirname, "../..");
 const fixture = path.join(repoRoot, "fixtures/tailwind.css");
 
-describe("@acme-skunkworks/stylelint-config", () => {
+describe("@rheged-studio/stylelint-config", () => {
   it("lints a Tailwind CSS fixture with no warnings or errors", async () => {
     const { errored, results } = await stylelint.lint({
       config,
