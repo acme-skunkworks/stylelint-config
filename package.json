@@ -11,13 +11,13 @@
     "linting",
     "code-quality"
   ],
-  "homepage": "https://github.com/acme-skunkworks/stylelint-config#readme",
+  "homepage": "https://github.com/rheged-studio/stylelint-config#readme",
   "bugs": {
-    "url": "https://github.com/acme-skunkworks/stylelint-config/issues"
+    "url": "https://github.com/rheged-studio/stylelint-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acme-skunkworks/stylelint-config.git"
+    "url": "https://github.com/rheged-studio/stylelint-config.git"
   },
   "license": "MIT",
   "author": {
