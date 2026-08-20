@@ -1,5 +1,5 @@
 {
-  "name": "@acme-skunkworks/stylelint-config",
+  "name": "@rheged-studio/stylelint-config",
   "version": "1.0.1",
   "description": "Shared Tailwind-friendly Stylelint config (standard + Tailwind CSS + alphabetical property order).",
   "keywords": [
