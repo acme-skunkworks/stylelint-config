@@ -1,13 +1,13 @@
 import type { Config } from "stylelint";
 
 /**
- * `@acme-skunkworks/stylelint-config` — the shared, Tailwind-friendly Stylelint
- * preset for Acme Skunkworks projects.
+ * `@rheged-studio/stylelint-config` — the shared, Tailwind-friendly Stylelint
+ * preset for Rheged Studio projects.
  *
  * Consumed via:
  *
  * ```jsonc
- * { "extends": "@acme-skunkworks/stylelint-config" }
+ * { "extends": "@rheged-studio/stylelint-config" }
  * ```
  *
  * `stylelint-config-tailwindcss` is listed after `stylelint-config-standard`
