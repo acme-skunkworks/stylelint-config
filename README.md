@@ -1,4 +1,4 @@
-# @acme-studio/stylelint-config
+# @rheged-studio/stylelint-config
 
 Shared, Tailwind-friendly [Stylelint](https://stylelint.io) config for Rheged Studio projects — [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard) + [`stylelint-config-tailwindcss`](https://github.com/schoero/stylelint-config-tailwindcss), with alphabetical property ordering via [`stylelint-order`](https://github.com/hudochenkov/stylelint-order).
 
@@ -7,9 +7,9 @@ Shared, Tailwind-friendly [Stylelint](https://stylelint.io) config for Rheged St
 `stylelint` is a peer dependency; the extended configs and the order plugin are bundled, so you only install this package plus Stylelint itself:
 
 ```bash
-pnpm add -D @acme-studio/stylelint-config stylelint
+pnpm add -D @rheged-studio/stylelint-config stylelint
 # or
-npm install --save-dev @acme-studio/stylelint-config stylelint
+npm install --save-dev @rheged-studio/stylelint-config stylelint
 ```
 
 ## 🚀 Usage
@@ -19,14 +19,14 @@ Create a `stylelint.config.mjs` (or `.stylelintrc.json`) in your project root an
 ```js
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ["@acme-studio/stylelint-config"],
+  extends: ["@rheged-studio/stylelint-config"],
 };
 ```
 
 ```jsonc
 // .stylelintrc.json
 {
-  "extends": "@acme-studio/stylelint-config",
+  "extends": "@rheged-studio/stylelint-config",
 }
 ```
 
@@ -55,7 +55,7 @@ Everything is a normal Stylelint config, so override or disable any rule after e
 ```js
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ["@acme-studio/stylelint-config"],
+  extends: ["@rheged-studio/stylelint-config"],
   rules: {
     // Turn off alphabetical property ordering for this project.
     "order/properties-alphabetical-order": null,
