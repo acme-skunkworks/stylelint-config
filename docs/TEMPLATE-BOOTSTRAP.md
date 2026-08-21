@@ -1,6 +1,6 @@
 # Template repo bootstrap checklist
 
-The one-time setup that turns `acme-skunkworks/npm-package-template` into a working
+The one-time setup that turns `acme-studio/npm-package-template` into a working
 GitHub **Template repository**, plus the org/repo settings every spawned repo inherits.
 
 These settings were proven on the `eslint-config` testbed (A-311 / A-312 / A-313 /
@@ -11,7 +11,7 @@ check-run, and shared reusable CI callers — A-371 / A-413 / A-424 / A-447 / A-
 > GitHub's "Use this template". Each spawned repo must re-apply the [repo-level](#repo-level-this-repo-and-each-spawned-repo)
 > section itself, then run the [spawned-repo quick checklist](#spawned-repo-quick-checklist).
 
-## Org-level (`acme-skunkworks`)
+## Org-level (`acme-studio`)
 
 Set once for the organisation; these protect the release identity across every repo.
 
@@ -91,12 +91,12 @@ configure Trusted Publisher → CI takes over from publish #2.
 
 ## Release-orchestrator onboarding (hands-off releases)
 
-Releases are driven by the **private** `acme-skunkworks/release-orchestrator` repo, which holds
+Releases are driven by the **private** `acme-studio/release-orchestrator` repo, which holds
 the bot key, runs `release-please release-pr`, and merges the release PR. Post-merge changelog
 enrichment / `version` stamping runs in-repo via `reusable-changelog-enrich.yml` in
 `pkg-release.yml` (A-799); the orchestrator's inline finalise is retired later (A-801).
 
-- [ ] Install road-runner-bot (perms in [Org-level](#org-level-acme-skunkworks)).
+- [ ] Install road-runner-bot (perms in [Org-level](#org-level-acme-studio)).
 - [ ] Add the repo to the orchestrator's `matrix.repo`.
 - [ ] Confirm the CI callers run on the `release-please--*` branch (they do — no skip), so the
       changelog lane validates the finalised entries before the release PR merges.
