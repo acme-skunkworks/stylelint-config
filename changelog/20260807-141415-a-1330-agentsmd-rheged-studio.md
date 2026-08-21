@@ -1,8 +1,8 @@
 ---
 title: Refresh AGENTS.md to Rheged Studio canonical
-release_note: ''
-created_at: '2026-08-07T14:14:15Z'
-merged_at: '2026-08-07T14:31:29Z'
+release_note: ""
+created_at: "2026-08-07T14:14:15Z"
+merged_at: "2026-08-07T14:31:29Z"
 branch: a-1330-stylelint-config-refresh-agentsmd-to-rheged-studio-canonical
 pr: 29
 commit: 64a4a99
@@ -16,7 +16,8 @@ stats:
   files_changed: 2
   loc_added: 47
   loc_removed: 8
-  commits:
+  commits: 2
+version: 1.0.2
 ---
 
 ## Changed
